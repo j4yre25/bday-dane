@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .wrapper {
+            height: 30vh;
+            /*This part is important for centering*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .typing-demo {
+            width: 17ch;
+            animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 5em;
+            position: relative;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+
+        .birthday-button {
+            display: inline-block;
+            background-color: #ff69b4;
+            /* Pink color */
+            color: #fff;
+            /* White color */
+            padding: 10px 20px;
+            margin: 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            cursor: pointer;
+            /* Add some space between the text and the button */
+        }
+
+        .birthday-button:hover {
+            background-color: #ff1493;
+            /* Lighter pink color on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="typing-demo">
+            Hello, Kuya Dane!
+        </div>
+        <a href="https://gifft.me/d#GxWWYheUwVD7BJLJ4SmC"><button class="birthday-button">Click me!</button></a>
+    </div>
+        
+</body>
+
+</html>
